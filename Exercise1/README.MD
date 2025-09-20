@@ -23,8 +23,3 @@ os, time, hashlib, logging (basic polling)
 
 For advanced version → use watchdog library (event-driven).
 
-Follow-up (Interview Twist):
-
-Extend script to copy new/modified files to a backup folder automatically.
-
-How would you scale this if directory has millions of files?
