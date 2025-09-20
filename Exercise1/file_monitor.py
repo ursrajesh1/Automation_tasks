@@ -64,7 +64,7 @@ class FileSystemMonitor:
 
 
 if __name__ == "__main__":
-    directory_name = "/Users/rajeshkandula/Practise/Automation_tasks/Excersice1"
+    directory_name = "./Excersice1" #Provide actual path
     os.makedirs(directory_name,exist_ok=True)
 
     monitor_tasks = FileSystemMonitor(directory_name, poll_interval=2)
