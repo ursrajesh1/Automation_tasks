@@ -1,4 +1,4 @@
-Exercise 1: File System Monitor (Beginner → Intermediate)
+Exercise 1: File System Monitor 
 
 Problem Statement:
 Write a Python script that monitors a given directory and logs all file changes (created, modified, deleted).
