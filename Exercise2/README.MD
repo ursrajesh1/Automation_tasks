@@ -35,3 +35,10 @@ python process_monitor.py
 
 ## 📌 How to test
 pytest -v Exercise2/test_process_monitor.py
+
+📌 Sample Log Output
+2025-09-19 17:00:01,234 - INFO - Starting process and resource monitoring
+2025-09-19 17:00:06,245 - WARNING - Process sshd is not running
+2025-09-19 17:00:06,246 - WARNING - High CPU usage detected: 92% (threshold 80%)
+2025-09-19 17:00:21,345 - INFO - Monitoring finished
+
