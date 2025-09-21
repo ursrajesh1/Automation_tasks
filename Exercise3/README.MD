@@ -1,29 +1,29 @@
-Exercise 3: Configuration Drift Detector (Advanced)
+# Exercise 3: [To Be Implemented]
 
-Problem Statement:
-Create a Python tool that compares two system configuration snapshots (JSON/YAML) and highlights differences.
+## 📌 Overview
+This folder is reserved for **Exercise 3** of the system-level automation series.  
+The goal is to extend monitoring and automation concepts further — combining the ideas from Exercise 1 (file monitoring) and Exercise 2 (process & resource monitoring).
 
-Requirements:
+---
 
-Take two JSON config files as input.
+## 📌 Planned Features
+- [ ] Implement a higher-level automation task (e.g., service health checker, network monitor, or log analyzer).  
+- [ ] Add configurable thresholds and alerts.  
+- [ ] Write unit tests with `pytest`.  
+- [ ] Provide sample logs and usage instructions.  
 
-Compare key-value pairs recursively (nested dicts).
+---
 
-Output differences in a structured format:
+## 📌 Files
+- `exercise3_task.py` → (to be implemented)  
+- `test_exercise3_task.py` → (to be implemented)  
+- `README.md` → Documentation  
 
-Changed: key1 → old: X, new: Y  
-Added: key2 → value: Z  
-Removed: key3 → old: W  
+---
 
+## 📌 How to Run (Future)
+```bash
+python exercise3_task.py
 
-Save report to a file.
-
-Hints / Key Modules:
-
-json, difflib, deepdiff (optional for advanced).
-
-Follow-up (Interview Twist):
-
-Integrate with Git to show drift from last committed version.
-
-Run as part of CI/CD pipeline for infra validation.
+## 📌 How to Test (Future)
+pytest -v Exercise3/test_exercise3_task.py
