@@ -1,25 +1,36 @@
-Exercise 1: File System Monitor 
+# Exercise 1: File System Monitor
 
-Problem Statement:
-Write a Python script that monitors a given directory and logs all file changes (created, modified, deleted).
+## 📌 Overview
+This exercise implements a **file system monitor** in Python that tracks:
+- File creation, deletion, and modification events.
+- Ignores `.log` files to prevent self-monitoring.
+- Logs all detected changes to a file.
 
-Requirements:
+This is the foundation of system-level monitoring, later extended in Exercise 2.
 
-Take directory path as input (from CLI args).
+---
 
-Detect:
+## 📌 Features
+- Monitors a target directory for:
+  - **Created files**
+  - **Deleted files**
+  - **Modified files**
+- Ignores files with `.log` extension.
+- Configurable polling interval and monitoring duration.
+- Logs events with timestamps.
 
-New file creation
+---
 
-File modification (timestamp/size)
+## 📌 Files
+- `file_monitor.py` → Main implementation (`FileSystemMonitor` class).  
+- `test_file_monitor.py` → Unit tests using `pytest`.  
+- `file_monitor.log` → Log file generated at runtime (ignored in git).  
 
-File deletion
+---
 
-Log events to a file with timestamp.
+## 📌 How to Run
+```bash
+python file_monitor.py
 
-Hints / Key Modules:
-
-os, time, hashlib, logging (basic polling)
-
-For advanced version → use watchdog library (event-driven).
-
+## 📌 How to Test
+pytest -v Exercise1/test_file_monitor.py
